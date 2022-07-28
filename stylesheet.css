@@ -1,0 +1,92 @@
+/* Mobile first design. Stardard CSS will run for width < 500px */
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.container {
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.section-container {
+    margin: 0px;
+    padding: 40px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+img {
+    margin-bottom: 10px;
+    width: 18%;
+}
+
+h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 15px;
+    border: none;
+    padding: 8px 16px 8px 16px;
+    cursor: pointer;
+}
+
+.sedans .btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+
+.luxury .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 30px;
+    color: black;
+}
