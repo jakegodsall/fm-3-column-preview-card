@@ -12,19 +12,25 @@ body {
 
     background-color: hsl(0, 0%, 95%);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color: hsla(0, 0%, 100%, 0.75);
 }
 
 .container {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
     border-radius: 5px;
+    height: 90vh;
+    max-width: 78%;
     overflow: hidden;
 }
 
 .section-container {
-    margin: 0px;
-    padding: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
 }
 
 .sedans {
@@ -46,8 +52,7 @@ body {
 
 
 img {
-    margin-bottom: 10px;
-    width: 18%;
+    width: 25%;
 }
 
 h2 {
@@ -56,19 +61,18 @@ h2 {
     font-size: 2em;
     text-transform: uppercase;
     margin: 0px;
-    margin-bottom: 20px;
 }
 
 p {
     margin: 0px;
-    margin-bottom: 20px;
 }
 
 .btn {
+    align-self: flex-start;
     background-color: hsl(0, 0%, 95%);
-    border-radius: 15px;
+    border-radius: 20px;
     border: none;
-    padding: 8px 16px 8px 16px;
+    padding: 12px 20px 12px 20px;
     cursor: pointer;
 }
 
@@ -96,10 +100,6 @@ p {
         display: flex;
         flex-direction: row;
         max-width: 45%;
-    }
-
-    .btn {
-        margin-top: 60px;
     }
 
 }
