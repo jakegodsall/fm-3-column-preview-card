@@ -1,13 +1,10 @@
 /* Mobile first design. Stardard CSS will run for width < 500px */
 
-/* font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif; */
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     background-color: hsl(0, 0%, 95%);
@@ -20,9 +17,10 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    height: 90vh;
     max-width: 78%;
     overflow: hidden;
+    height: 1000px;
+    margin-top: 100px;
 }
 
 .section-container {
@@ -74,11 +72,15 @@ p {
     border: none;
     padding: 12px 20px 12px 20px;
     cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease-in;
 }
+
 
 .sedans .btn {
     color: hsl(31, 77%, 52%);
 }
+
 
 .suvs .btn {
     color: hsl(184, 100%, 22%);
@@ -87,6 +89,12 @@ p {
 
 .luxury .btn {
     color: hsl(179, 100%, 13%);
+}
+
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+    color: hsl(0, 0%, 95%);
 }
 
 .attribution {
@@ -99,8 +107,8 @@ p {
     .container {
         display: flex;
         flex-direction: row;
-        max-width: 38%;
-        height: 35vh;
+        max-width: 1000px;
+        height: 500px;
     }
 
     .section-container {
