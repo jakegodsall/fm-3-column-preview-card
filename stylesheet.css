@@ -17,7 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    max-width: 78%;
+    width: 270px;
     overflow: hidden;
     height: 1000px;
     margin-top: 100px;
@@ -66,6 +66,7 @@ p {
 }
 
 .btn {
+    font-weight: 700;
     align-self: flex-start;
     background-color: hsl(0, 0%, 95%);
     border-radius: 20px;
@@ -104,14 +105,64 @@ p {
 }
 
 @media screen and (min-width: 800px) {
+    body {
+        justify-content: center;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
-        max-width: 1000px;
+        width: 900px;
         height: 500px;
     }
 
     .section-container {
         justify-content: space-around;
+        padding: 40px;
     }
+
+    .btn {
+        width: 70%;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        padding: 15px 0px;
+    }
+
+    .sedans .btn {
+        color: #fff;
+        background-color: hsl(31, 77%, 52%);
+    }
+
+
+    .suvs .btn {
+        color: #fff;
+        background-color: hsl(184, 100%, 22%);
+    }
+
+
+    .luxury .btn {
+        color: #fff;
+        background-color: hsl(179, 100%, 13%);
+    }
+
+    .btn:hover {
+        background-color: rgba(255, 255, 255, .8);
+        color: hsl(0, 0%, 95%);
+    }
+
+    .sedans .btn:hover {
+        color: hsl(31, 77%, 52%);
+    }
+
+
+    .suvs .btn:hover {
+        color: hsl(184, 100%, 22%);
+    }
+
+
+    .luxury .btn:hover {
+        color: hsl(179, 100%, 13%);
+    }
+
 }
