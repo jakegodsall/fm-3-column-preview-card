@@ -1,6 +1,5 @@
 /* Mobile first design. Stardard CSS will run for width < 500px */
 
-
 body {
     min-height: 100vh;
     display: flex;
@@ -8,7 +7,7 @@ body {
     align-items: center;
 
     background-color: hsl(0, 0%, 95%);
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     font-size: 14px;
     color: hsla(0, 0%, 100%, 0.75);
 }
@@ -35,19 +34,13 @@ body {
     background-color: hsl(31, 77%, 52%);
 }
 
-
-
 .suvs {
     background-color: hsl(184, 100%, 22%);
 }
 
-
-
 .luxury {
     background-color: hsl(179, 100%, 13%);
 }
-
-
 
 img {
     width: 25%;
@@ -55,7 +48,7 @@ img {
 
 h2 {
     color: hsl(0, 0%, 95%);
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: "Big Shoulders Display", cursive;
     font-size: 2em;
     text-transform: uppercase;
     margin: 0px;
@@ -77,24 +70,20 @@ p {
     transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
-
 .sedans .btn {
     color: hsl(31, 77%, 52%);
 }
-
 
 .suvs .btn {
     color: hsl(184, 100%, 22%);
 }
 
-
 .luxury .btn {
     color: hsl(179, 100%, 13%);
 }
 
-
 .btn:hover {
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, 0.2);
     color: hsl(0, 0%, 95%);
 }
 
@@ -102,6 +91,12 @@ p {
     text-align: center;
     margin-top: 30px;
     color: black;
+
+    a {
+        text-decoration: none;
+        color: hsl(31, 77%, 52%);
+        font-weight: 600;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -134,12 +129,10 @@ p {
         background-color: hsl(31, 77%, 52%);
     }
 
-
     .suvs .btn {
         color: #fff;
         background-color: hsl(184, 100%, 22%);
     }
-
 
     .luxury .btn {
         color: #fff;
@@ -147,7 +140,7 @@ p {
     }
 
     .btn:hover {
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba(255, 255, 255, 0.8);
         color: hsl(0, 0%, 95%);
     }
 
@@ -155,14 +148,11 @@ p {
         color: hsl(31, 77%, 52%);
     }
 
-
     .suvs .btn:hover {
         color: hsl(184, 100%, 22%);
     }
 
-
     .luxury .btn:hover {
         color: hsl(179, 100%, 13%);
     }
-
 }
